@@ -1,0 +1,2567 @@
+@media (min-width: 1440px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width:1290px) and (max-width:1441px) {
+    .data-left {
+        padding: 50px;
+        padding-top: 0;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 68px;
+    }
+
+    .hero-desc {
+        margin-top: 20px;
+    }
+
+    .spect-data img {
+        width: 100%;
+        max-width: 70px;
+    }
+
+    .spect-text {
+        font-size: 20px;
+    }
+
+    .text-font {
+        font-size: 100px;
+        line-height: 123px;
+    }
+
+    .data-design-margin {
+        margin-top: 200px;
+    }
+
+    .tile-data-about {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .title-about {
+        font-size: 44px;
+        line-height: 58px;
+        margin-top: 15px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    .image-data-about {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .palate-exper-right {
+        width: 290px;
+        height: 290px;
+    }
+
+    .palate-exper-left {
+        width: 290px;
+        height: 290px;
+    }
+
+    .palate-exper-bottom {
+        width: 290px;
+        height: 290px;
+        margin-top: 230px;
+    }
+
+    .title-top {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .sucess-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+    .message-data {
+        gap: 8px;
+        margin-top: 40px;
+    }
+
+    .client-says {
+        padding: 40px;
+    }
+
+    .client-title {
+        margin-top: 10px;
+    }
+
+    .image-data-test img {
+        width: 100%;
+    }
+
+    .bloger-title-data-main {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .comming-title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 10px;
+    }
+
+    .comming-desc {
+        margin-top: 15px;
+    }
+
+    .wrapper {
+        margin-top: 15px;
+    }
+
+    .data-comming-soon-btn {
+        margin-top: 0px;
+        padding: 15px 30px;
+    }
+
+    .comming-input {
+        margin-top: 0px;
+    }
+
+    .line-comming {
+        margin-top: 45px;
+    }
+
+    .left-slide-coming {
+        padding: 40px;
+    }
+
+    .home-renewable {
+        font-size: 200px;
+        line-height: 200px;
+    }
+}
+
+@media (max-width:1290px) {
+    .container {
+        width: 1140px;
+    }
+
+    .data-left {
+        padding: 30px;
+        padding-top: 0;
+        margin-top: -60px;
+    }
+
+    .spect-data img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .spect-text {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .button {
+        padding: 12px 30px;
+        margin-top: 20px;
+    }
+
+    .text-font {
+        font-size: 80px;
+        line-height: 98px;
+    }
+
+    .logo-nav {
+        gap: 50px;
+    }
+
+    .ul-nav {
+        gap: 20px;
+    }
+
+    .data-page {
+        padding: 60px;
+    }
+
+    .text-menu {
+        font-size: 32px;
+        line-height: 54px;
+    }
+
+    .ander-li-achor {
+        font-size: 22px;
+        padding-left: 20px;
+        line-height: 28px;
+    }
+
+    .open {
+        padding: 20px 0 !important;
+    }
+
+    .under-menu-li {
+        gap: 20px;
+    }
+
+    .menu-ul {
+        gap: 60px;
+    }
+
+    .boxdesign-services {
+        padding: 30px;
+    }
+
+    .boxdesign-services-center {
+        padding: 30px;
+    }
+
+    .solar-services {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .solar-services-center {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .services-boxes {
+        padding-bottom: 60px;
+    }
+
+    .tile-data-about {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .title-about {
+        font-size: 44px;
+        line-height: 58px;
+        margin-top: 15px;
+    }
+
+    .image-data-about {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .about-data {
+        padding: 80px 0;
+    }
+
+    .padding-sucess {
+        padding-bottom: 80px;
+    }
+
+    .title-about {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 15px;
+    }
+
+    .tile-data-about {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .palate-exper-right {
+        width: 250px;
+        height: 250px;
+    }
+
+    .palate-exper-left {
+        width: 250px;
+        height: 250px;
+    }
+
+    .palate-exper-bottom {
+        width: 250px;
+        height: 250px;
+        margin-top: 200px;
+    }
+
+    .appoint-ment-data {
+        max-width: 992px;
+    }
+
+    .appoit-detail {
+        padding: 40px;
+    }
+
+    .input-appoint {
+        max-width: 430px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-div-appoint {
+        padding: 300px 0;
+        padding-top: 100px;
+    }
+
+    .appoint-ment-data {
+        margin-top: -180px;
+    }
+
+    .appoint-video {
+        width: 100px;
+        height: 100px;
+    }
+
+    .design-slick-succes-main {
+        padding-top: 40px;
+    }
+
+    .testimonial-main {
+        padding-top: 40px;
+    }
+
+    .client-says {
+        padding: 40px;
+    }
+
+    .client-title {
+        margin-top: 10px;
+    }
+
+    .image-data-test img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .message-data {
+        gap: 8px;
+        margin-top: 40px;
+    }
+
+    .client-title {
+        margin-top: 10px;
+    }
+
+    .client-desc {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+
+    .message-data {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .date-time {
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .blog-title {
+        font-size: 18px;
+        line-height: 32px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .blog-date-font {
+        font-size: 16px;
+    }
+
+    .footer-appointment-data {
+        padding: 40px;
+    }
+
+    .last-title {
+        font-size: 38px;
+        line-height: 54px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .last-btn {
+        padding: 15px;
+        padding-right: 60px;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .last-desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .blog-sec {
+        padding-bottom: 255px;
+    }
+
+    .footer-li a {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .last-data-footer {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .data-appoint p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #FFF;
+    }
+
+    .footer {
+        padding: 80px 0;
+        padding-bottom: 40px;
+    }
+
+    .footer-main {
+        padding-top: 80px;
+    }
+
+    .services-home-hero {
+        padding: 120px 80px;
+    }
+
+    .services-second-text {
+        padding: 0 15px;
+    }
+
+    .services-sec-title {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 10px;
+    }
+
+    .services-padding-data {
+        padding: 80px;
+        padding-bottom: 265px;
+    }
+
+    .over-exper-sec {
+        width: 280px;
+        height: 280px;
+    }
+
+    .services-detail-title {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .ander-data-detail-main {
+        gap: 20px;
+    }
+
+    .main-services-iomages {
+        margin: 20px 0;
+    }
+
+    .services-detail-title-sec {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .image-scroll-services {
+        margin: 20px 0;
+    }
+
+    .prosess-over-services {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .all-services-box {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .services-box-link {
+        padding: 10px 20px;
+    }
+
+    .services-box-link p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .data-all-services-contact {
+        gap: 30px;
+    }
+
+    .all-contact {
+        gap: 20px;
+    }
+
+    .company-pro {
+        padding: 15px;
+    }
+
+    .about-detail-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 15px;
+    }
+
+    .box-medal p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        color: #10271D;
+    }
+
+    .data-about-ul .services-li p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #10271D;
+    }
+
+    .data-about-ul {
+        margin-top: 15px;
+        row-gap: 20px;
+    }
+
+    .team-detail-scoot {
+        padding: 40px;
+    }
+
+    .info-card {
+        margin-top: 40px;
+    }
+
+    .team-about {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #888888;
+    }
+
+    .data-four {
+        padding: 10px;
+    }
+
+    .design-boder-width {
+        width: 40px;
+        height: 40px;
+    }
+
+    .design-boder-width img {
+        max-width: 20px;
+    }
+
+    .plan-sub {
+        font-size: 44px;
+        line-height: 58px;
+        margin-bottom: 20px;
+    }
+
+    .question-design-li p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .round-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .image-four img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .slideshow-text {
+        font-size: 60px;
+    }
+
+    .contatc-title {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .contact-desc {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .bloger-title-data-main {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .main-skot {
+        height: 100%;
+        width: 100% !important;
+    }
+
+    .data-comming-soon-btn {
+        margin-top: 0px !important;
+        padding: 15px 30px !important;
+    }
+
+    .line-comming {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-hero-home {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-made-services {
+        justify-content: center;
+    }
+
+    .image-home {
+        padding: 100px 0;
+    }
+
+    .home-renewable {
+        font-size: 150px;
+        line-height: 150px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1141px) {
+    .container {
+        width: 960px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .text-design-font {
+        margin: auto;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .text-font {
+        font-size: 74px;
+        line-height: 98px;
+    }
+
+    .logo-nav {
+        gap: 20px;
+    }
+
+    .contact-data {
+        gap: 10px;
+    }
+
+    .li-nav i {
+        color: #FFF;
+        margin-left: 0px;
+    }
+
+    .ul-nav {
+        gap: 20px;
+        display: none;
+    }
+
+    .design-data {
+        padding: 20px;
+    }
+
+    .title-about {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 15px;
+    }
+
+    .font-exper {
+        font-size: 120px;
+        line-height: 120px;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .data-experience {
+        padding: 30px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        max-width: 310px;
+    }
+
+    .rounded-about {
+        right: 0%;
+        top: -15%;
+    }
+
+    .year-exper {
+        right: -30%;
+    }
+
+
+    .input-appoint {
+        max-width: 430px;
+    }
+
+    .sucess-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+    .box-content {
+        max-width: 200px;
+        border-bottom: 6px solid transparent;
+    }
+
+    .th-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .faq-question p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 960px;
+    }
+
+    .bg-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .data-gap .data-hero-sport-two {
+        padding: 0;
+        width: 100%;
+    }
+
+    .data-gap .data-hero-sport {
+        padding: 0;
+        width: 100%;
+    }
+
+    .right-data {
+        width: 100%;
+        max-height: 650px;
+    }
+
+    .data-left {
+        padding: 60px;
+        padding-top: 0;
+        margin-top: -60px;
+    }
+
+    .hero-title {
+        font-size: 54px;
+        line-height: 76px;
+    }
+
+    .spect-data img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .text-font {
+        font-size: 115px;
+        line-height: 115px;
+    }
+
+    .button {
+        padding: 12px 30px;
+        margin-top: 30px;
+    }
+
+    .bg-container {
+        padding: 15px;
+    }
+
+    .ul-nav {
+        gap: 20px;
+        display: none;
+    }
+
+    .header {
+        left: 0px;
+    }
+
+    .design-data {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .text-design-font {
+        margin-top: 80px;
+    }
+
+    .left-design {
+        padding: 40px;
+    }
+
+    .right-design {
+        padding: 40px;
+    }
+
+    .menu-ul {
+        gap: 30px;
+    }
+
+    .data-page {
+        padding: 40px;
+    }
+
+    .contact-data {
+        gap: 20px;
+    }
+
+    .question-design {
+        width: 100%; 
+       max-width: 100%;
+    }
+
+    .design-data {
+        padding: 20px;
+    }
+
+    .data-design-margin {
+        margin-top: 100px;
+    }
+
+    .services-boxes {
+        padding-bottom: 40px;
+    }
+
+    .font-exper {
+        font-size: 120px;
+        line-height: 120px;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .data-experience {
+        padding: 30px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        max-width: 310px;
+    }
+
+    .rounded-about {
+        right: 0%;
+        top: -15%;
+    }
+
+    .year-exper {
+        right: -30%;
+    }
+
+    .about-data {
+        padding: 60px 0;
+    }
+
+    .padding-sucess {
+        padding-bottom: 60px;
+    }
+
+    .palate-exper-right {
+        width: 330px;
+        height: 330px;
+    }
+
+    .palate-exper-left {
+        width: 330px;
+        height: 330px;
+    }
+
+    .palate-exper-bottom {
+        width: 330px;
+        height: 330px;
+        margin-top: 250px;
+    }
+
+    .data-tpo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        margin: auto;
+        max-width: 640px;
+    }
+
+    .data-bto {
+        display: none;
+    }
+
+    .subscribe-index {
+        row-gap: 0px;
+    }
+
+    .mega-counter {
+        font-size: 38px;
+    }
+
+    .descr-index {
+        font-size: 18px;
+        line-height: normal;
+        max-width: 100%;
+    }
+
+    .appoint-ment-data {
+        max-width: 768px;
+    }
+
+    .appoit-detail {
+        padding: 30px;
+    }
+
+    .input-appoint {
+        max-width: 320px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-div-appoint {
+        padding: 200px 0;
+        padding-top: 100px;
+    }
+
+    .appoint-ment-data {
+        margin-top: -130px;
+    }
+
+    .appoint-ment-data {
+        margin-top: -130px;
+    }
+
+    .appoint-video img {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .why-choose-data {
+        margin-top: 30px;
+        row-gap: 20px;
+    }
+
+    .why-detail-area {
+        gap: 5px;
+    }
+
+    .sucess-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    .slick-slide {
+        margin: 0 10px;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+    .design-slick-succes-main {
+        padding-top: 20px;
+    }
+
+    .client-says {
+        padding: 20px;
+    }
+
+    .client-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .client-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .message-data img {
+        width: 100%;
+        max-width: 55px;
+    }
+
+    .message-data {
+        gap: 0px;
+        margin-top: 10px;
+    }
+
+    .testimonial-main {
+        padding-top: 20px;
+    }
+
+    .data-flow {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .data-team-biggest {
+        padding-bottom: 40px;
+    }
+
+    .faq-question p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .fact-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-container {
+        margin-top: 40px;
+    }
+
+    .faq-question img {
+        width: 100%;
+        max-width: 20px;
+    }
+
+    .footer-appointment-data {
+        margin-top: -315px;
+    }
+
+    .footer {
+        padding: 60px 0;
+        padding-bottom: 40px;
+    }
+
+    .footer-main {
+        padding-top: 60px;
+    }
+
+    .services-home-hero {
+        padding: 60px;
+    }
+
+    .title-of-hero p {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .title-of-hero {
+        gap: 10px;
+    }
+
+    .title-of-hero span {
+        font-size: 16px;
+    }
+
+    .separte-desc {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 15px;
+    }
+
+    .services-padding-data {
+        padding: 60px;
+        padding-bottom: 200px;
+    }
+
+    .over-exper-sec {
+        width: 210px;
+        height: 210px;
+    }
+
+    .design-sec-exper {
+        margin-top: -110px;
+    }
+
+    .descr-index {
+        font-size: 16px;
+        line-height: normal;
+        max-width: 100%;
+    }
+
+    .data-services-detail {
+        row-gap: 30px;
+        justify-content: center;
+    }
+
+    .all-services-box {
+        padding: 25px;
+    }
+
+    .services-box-link {
+        padding: 15px 20px;
+    }
+
+    .data-four {
+        padding: 20px;
+    }
+
+    .info-card {
+        margin-top: 20px;
+    }
+
+    .design-boder-width {
+        width: 60px;
+        height: 60px;
+    }
+
+    .design-boder-width img {
+        max-width: 24px;
+    }
+
+    .plan-sub {
+        font-size: 36px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    .line-plan {
+        margin: 20px 0;
+    }
+
+    .princing-detail {
+        padding: 20px;
+    }
+
+    .faq-data-main {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .title-seprate {
+        font-size: 22px;
+        line-height: 36px;
+        margin: 15px 0;
+    }
+
+    .desc-title-testimonial {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        color: #10271D;
+    }
+
+    .seprate-test {
+        padding: 15px;
+    }
+
+    .round-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .image-four img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .slideshow-text {
+        font-size: 42px;
+        letter-spacing: 5px;
+    }
+
+    .foren-about {
+        margin-top: 10px;
+    }
+
+    .separte-about {
+        margin-top: 10px;
+    }
+
+    .data-about-setedf {
+        row-gap: 15px;
+        margin-top: 20px;
+    }
+
+    .deright-sport {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .left-contact {
+        text-align: center;
+    }
+
+    .input-appoint-beat {
+        padding: 0;
+        max-width: 330px;
+    }
+
+    .hero-data-bottom {
+        padding-bottom: 0;
+    }
+
+    .blog-data-sec-detail {
+        width: 95%;
+    }
+
+    .data-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .block-2, .overlay {
+        display: none;
+    }
+
+    .block-1 {
+        width: 50%;
+    }
+
+    .block-3 {
+        width: 12%;
+    }
+
+    .binker .slide-slick {
+        display: none !important;
+    }
+
+    .text-slide h1 {
+        font-size: 30px !important;
+    }
+
+    .text-slider-wrapper {
+        position: absolute;
+        top: 60% !important;
+    }
+
+    .slider-control {
+        left: 22.5%;
+    }
+
+    .comming-title {
+        font-size: 35px;
+        line-height: 48px;
+        margin-top: 25px;
+    }
+
+    .comming-desc {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #FFF;
+        margin-top: 25px;
+    }
+
+    .line-comming {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-slide-coming {
+        padding: 35px;
+    }
+
+    .comming-title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 25px;
+    }
+
+    .number, .separator {
+        font-size: 54px;
+    }
+
+    #js-days:after, #js-hours:after, #js-minutes:after, #js-seconds:after {
+        bottom: -30px;
+    }
+
+    .comming-input {
+        margin-top: 0;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .line-comming {
+        margin-top: 30px;
+    }
+
+    .fnc-slide__heading-line {
+        font-size: 64px;
+    }
+
+    .fnc-slide__mask {
+        right: 40%;
+        top: 20%;
+    }
+
+    .home-hero-title {
+        font-size: 48px;
+        line-height: 68px;
+        margin-top: 15px;
+    }
+
+    .home-desc-made {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .home-made-services img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .home-made-title {
+        font-size: 20px;
+    }
+
+    .image-home {
+        padding: 80px 0;
+        padding-top: 100px;
+    }
+
+    .home-renewable {
+        font-size: 115px;
+        line-height: 115px;
+    }
+}
+
+@media (min-width:768px) and (max-width:960px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+    .text-font {
+        font-size: 80px;
+        line-height: 96px;
+    }
+
+    .data-left {
+        padding: 30px;
+        padding-top: 0;
+    }
+
+    .hero-title {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .spect-data img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .design-data {
+        padding: 20px;
+    }
+
+    .right-design {
+        display: none;
+    }
+
+    .left-design {
+        width: 100%;
+    }
+
+    .docts-responsive {
+        display: flex;
+    }
+
+    .data-page {
+        padding: 40px;
+    }
+
+    .menu-ul {
+        gap: 20px;
+    }
+
+    .mex-tilte {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 35px;
+        color: #FFF;
+    }
+
+    .data-main-contact {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+
+    .design-call-left {
+        margin-top: 10px;
+    }
+
+    .title-font-sec {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .desc-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .max-width-data {
+        margin-bottom: 10px;
+    }
+
+    .services-boxes {
+        background-color: #000;
+        padding-bottom: 20px;
+    }
+
+    .title-about {
+        font-size: 42px;
+        line-height: 58px;
+    }
+
+    .button {
+        padding: 12px 30px;
+        margin-top: 10px;
+    }
+
+    .about-data {
+        padding: 40px 0;
+    }
+
+    .padding-sucess {
+        padding-bottom: 40px;
+    }
+
+    .palate-exper-right {
+        width: 290px;
+        height: 290px;
+    }
+
+    .palate-exper-left {
+        width: 290px;
+        height: 290px;
+    }
+
+    .palate-exper-bottom {
+        width: 290px;
+        height: 290px;
+        margin-top: 250px;
+    }
+
+    .data-tpo {
+        width: 100%;
+    }
+
+    .appoit-detail {
+        padding: 30px;
+    }
+
+    .title-about {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .title-desc {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #888888;
+        margin-top: 10px;
+    }
+
+    .input-appoint {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-appointment {
+        margin-top: 20px;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .sucess-title {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    .overlay-succes {
+        padding: 10px;
+    }
+
+    .data-sucess {
+        margin-top: 10px;
+    }
+
+    .image-data-test {
+        display: none;
+    }
+
+    .client-says {
+        padding: 30px;
+    }
+
+    .number-proses {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .proses-detail {
+        padding-top: 30px;
+    }
+
+    .image-prosess {
+        width: 200px;
+        height: 200px;
+    }
+
+    .team-data:hover .box-content {
+        bottom: -10%;
+    }
+
+    .box-content {
+        bottom: -10%;
+    }
+
+    .team-all {
+        row-gap: 90px;
+    }
+
+    .faq-question p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-main {
+        padding-top: 40px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-appointment-data {
+        margin-top: -295px;
+    }
+
+    .copy-right {
+        padding-top: 40px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .data-bottm-text {
+        gap: 10px;
+    }
+
+    .services-home-hero {
+        padding: 40px;
+    }
+
+    .title-of-hero p {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .services-padding-data {
+        padding: 40px;
+        padding-bottom: 100px;
+    }
+
+    .services-main-separate {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-about-image img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .services-about-image {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .data-detail-service span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .data-detail-service {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mega-counter {
+        font-size: 30px;
+    }
+
+    .descr-index {
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .over-exper-sec {
+        width: 150px;
+        height: 150px;
+    }
+
+    .design-sec-exper {
+        margin-top: -70px;
+    }
+
+    .services-detail-title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .detail-desc {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+    }
+
+    .services-detail-title-sec {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .services-li p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .services-li img {
+        width: 100%;
+        max-width: 16px;
+    }
+
+    .services-li {
+        gap: 5px;
+    }
+
+    .data-about-btn {
+        margin-top: 15px;
+    }
+
+    .team-sec-detail {
+        row-gap: 60px;
+    }
+
+    .team-detail-scoot {
+        padding: 20px;
+    }
+
+    .name-of-expert-detail p {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .name-of-expert-detail span {
+        font-size: 16px;
+    }
+
+    .border-data {
+        border-bottom: 2px solid #E7F0E9;
+        border-right: 0px solid;
+    }
+
+    .border-data-right {
+        border-right: 0px solid #E7F0E9;
+        border-bottom: 2px solid #E7F0E9;
+    }
+
+    .dattitle-single {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: justify;
+    }
+
+    .data-progress-single-design {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .seprate-test {
+        padding: 20px;
+    }
+
+    .last-ntesti {
+        margin-top: 30px;
+    }
+
+    .round-image img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .image-four img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .slideshow-text {
+        font-size: 38px;
+        letter-spacing: 5px;
+    }
+
+    .contatc-title {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .project-four-text {
+        font-size: 20px;
+        width: 100%;
+        font-weight: 700;
+        pointer-events: none;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .right-contact {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .copy-comming {
+        display: none;
+    }
+
+    .social-coming {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .input-appoint-beat {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .quite-box-data {
+        padding: 25px;
+    }
+
+    .quiz-text-blog {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .blog-comment-bloger {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .bloger-title-data-main {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .fnc-nav {
+        display: none;
+    }
+
+    .fnc-slide__heading-line {
+        font-size: 46px;
+    }
+
+    .home-hero-title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-top: 10px;
+    }
+
+    .home-made-services img {
+        width: 100%;
+        max-width: 70px;
+    }
+
+    .image-home {
+        padding: 60px 0;
+        padding-top: 100px;
+    }
+
+    .home-renewable {
+        font-size: 85px;
+        line-height: 85px;
+    }
+}
+
+@media (min-width:576px) and (max-width:720px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .spect-data {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .text-font {
+        font-size: 58px;
+        line-height: 88px;
+    }
+
+    .hero-title {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .data-left {
+        padding: 25px;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    .button {
+        padding: 12px 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .button-design {
+        display: none;
+    }
+
+    .left-design {
+        padding: 20px;
+    }
+
+    .data-page {
+        padding: 60px 10px;
+    }
+
+    .text-menu {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    .ander-li-achor {
+        font-size: 18px;
+        padding-left: 15px;
+        line-height: 26px;
+    }
+
+    .menu-ul {
+        gap: 25px;
+    }
+
+    .data-main-contact {
+        padding: 0px;
+    }
+
+    .boxdesign-services {
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .boxdesign-services-center {
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .boxdesign-services img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .boxdesign-services-center img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .services-btn img {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .title-font-sec {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .services-btn {
+        padding: 12px 40px;
+    }
+
+    .services-btn-center {
+        padding: 12px 40px;
+    }
+
+    .services-btn-center img {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    .title-about {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .tile-data-about {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .data-experience {
+        padding: 15px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        max-width: 270px;
+        transform: translate(-50%);
+    }
+
+    .font-exper {
+        font-size: 100px;
+        line-height: 100px;
+        width: 175px;
+    }
+
+    .rounded-about {
+        right: 20%;
+        top: -5%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .year-exper {
+        right: -20%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .about-detail {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .palate-exper-right {
+        width: 190px;
+        height: 190px;
+    }
+
+    .palate-exper-left {
+        width: 190px;
+        height: 190px;
+    }
+
+    .palate-exper-bottom {
+        width: 190px;
+        height: 190px;
+        margin-top: 150px;
+    }
+
+    .data-tpo {
+        width: 100%;
+    }
+
+    .data-bto {
+        display: none;
+    }
+
+    .deta-right-design {
+        row-gap: 30px;
+    }
+
+    .appoit-detail {
+        padding: 25px;
+    }
+
+    .main-appointment {
+        row-gap: 15px;
+    }
+
+    .appoint-ment-data {
+        max-width: 320px;
+    }
+
+    .title-about {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .title-top {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .top-tilte {
+        gap: 5px;
+    }
+
+    .top-tilte img {
+        max-width: 30px;
+    }
+
+    .data-why {
+        row-gap: 10px;
+        text-align: center;
+    }
+
+    .choose-data {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-testimonail-data {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .message-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .client-says {
+        padding: 15px;
+    }
+
+    .faq-container {
+        margin-top: 25px;
+    }
+
+    .footer-appointment-data {
+        padding: 20px;
+    }
+
+    .footer-top {
+        text-align: center;
+    }
+
+    .data-footer-left-appoint {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .last-title {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .last-btn {
+        padding: 15px;
+        padding-right: 20px;
+    }
+
+    .data-sponch-footer {
+        width: 50%;
+    }
+
+    .footer-main {
+        padding-top: 30px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-appointment-data {
+        margin-top: -285px;
+    }
+
+    .title-of-hero {
+        align-items: center;
+    }
+
+    .services-home-hero::after {
+        background: linear-gradient(90deg, #00000087 0%, #00000087 100%);
+    }
+
+    .services-second-text .button {
+        margin: 0;
+        margin-top: 20px;
+        display: inline-flex;
+    }
+
+    .services-second-text {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .services-padding-data {
+        padding: 20px;
+    }
+
+    .services-padding-data::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(0 0 0 / 37%) 100%);
+    }
+
+    .exper-sec-data {
+        display: none;
+    }
+
+    .services-detail-title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .main-image-ander img {
+        width: 100%;
+        max-width: 40px;
+    }
+
+    .main-image-ander {
+        width: 60px;
+        height: 60px;
+    }
+
+    .image-services-sec-data {
+        width: 100%;
+    }
+
+    .image-scroll-services {
+        margin: 20px 0;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .data-about-ul {
+        flex-direction: column-reverse;
+    }
+
+    .about-detail-desc {
+        text-align: justify;
+    }
+
+    .medal-about {
+        justify-content: start;
+    }
+
+    .name-of-all {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .team-detail-scoot {
+        row-gap: 15px;
+    }
+
+    .team-detail-scoot {
+        padding: 15px;
+    }
+
+    .data-term-team {
+        margin: 0 20px;
+    }
+
+    .team-detail-scoot {
+        padding: 5px;
+    }
+
+    .team-about {
+        text-align: justify;
+    }
+
+    .data-four {
+        padding: 15px;
+    }
+
+    .team-title-single {
+        font-size: 30px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .faq-container-seprate {
+        margin-top: 0;
+    }
+
+    .title-seprate {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 10px 0;
+    }
+
+    .round-image img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .image-four img {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .title-of-hero p {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .error-text-desxc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .data-contact-left {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .bloge-date-sep span {
+        display: none;
+    }
+
+    .bloge-date-sep {
+        gap: 5px;
+    }
+
+    .bloger-title-data-main {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .home-hero-title {
+        font-size: 26px;
+        line-height: 43px;
+        margin-top: 10px;
+    }
+
+    .home-renewable {
+        font-size: 55px;
+        line-height: 72px;
+    }
+}
+
+@media (min-width:380px) and (max-width:540px) {
+    .container {
+        width: 100%;
+    }
+
+    .appoint-ment-data {
+        max-width: 400px;
+    }
+
+    .overlay-succes {
+        padding: 20px;
+    }
+
+    .comming-title {
+        font-size: 28px;
+        line-height: 39px;
+        margin-top: 15px;
+    }
+
+    .left-slide-coming {
+        padding: 20px;
+    }
+
+    .number, .separator {
+        font-size: 40px;
+    }
+
+    #js-days:after, #js-hours:after, #js-minutes:after, #js-seconds:after {
+        bottom: 0px;
+        font-size: 14px;
+    }
+
+    .comming-input {
+        margin-top: -50px;
+        width: 100%;
+    }
+
+    .data-comming-soon-btn {
+        max-width: 150px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #10271D;
+        white-space: nowrap;
+    }
+
+    .comming-input input {
+        padding: 18px;
+    }
+
+    .left-slide-coming {
+        padding: 12px;
+    }
+}
+
+@media (max-width:380px) {
+    .container {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .spect-data {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .data-left {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .text-font {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    .close-btn img {
+        width: 100%;
+        max-width: 20px;
+    }
+
+    .font-exper {
+        font-size: 80px;
+        line-height: 80px;
+        width: 175px;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .year-exper {
+        text-align: left;
+        right: -10%;
+    }
+
+    .rounded-about {
+        right: 30%;
+        top: -10%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-data {
+        padding: 30px 0;
+    }
+
+    .padding-sucess {
+        padding-bottom: 30px;
+    }
+
+    .palate-exper-right {
+        width: 160px;
+        height: 160px;
+    }
+
+    .palate-exper-left {
+        width: 160px;
+        height: 160px;
+    }
+
+    .palate-exper-bottom {
+        width: 160px;
+        height: 160px;
+        margin-top: 120px;
+    }
+
+    .mega-counter {
+        font-size: 30px;
+    }
+
+    .overlay-succes {
+        padding: 20px;
+    }
+
+    .sucess-title {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    .success-desc {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .client-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .data-sponch-footer {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .plan-sub {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .plan-point {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .question-design-li p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .question-design-li {
+        padding: 15px;
+    }
+
+    .round-image img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .image-four img {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .project-four-text {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+
+@media (min-width:280px) and (max-width:321px) {
+    .container {
+        width: 100%;
+    }
+
+    .text-font {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    .spect-data {
+        gap: 10px;
+    }
+
+    .spect-text {
+        font-size: 16px;
+    }
+
+    .spect-data img {
+        width: 100%;
+        max-width: 40px;
+    }
+}
