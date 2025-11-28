@@ -25,11 +25,87 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
     <style>
+      .government-scheme-section {
+        padding: 100px 0;
+        background-color: #f8f9fa;
+      }
+
+      .govt-project-box {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .govt-project-box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+      }
+
+      .project-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .project-details {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .project-details li {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      .project-details li strong {
+        color: #000;
+      }
+
       #footer {
         margin-top: 200px;
       }
       #make-appoint {
         margin-top: 260px;
+      }
+
+      .floating-icons {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 999;
+        right: 30px;
+      }
+
+      .float-btn {
+        width: 48px;
+        height: 48px;
+        background-color: #25d366; /* WhatsApp default */
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-size: 22px;
+        transition: all 0.3s ease;
+      }
+
+      .call-btn {
+        background-color: #0d6efd; /* Bootstrap blue */
+      }
+
+      .float-btn:hover {
+        transform: scale(1.1);
       }
     </style>
   </head>
@@ -52,150 +128,26 @@
         </div>
         <ul class="ul-nav">
           <li class="li-nav">
-            <a href="index.html" class="navbar-anchor"
-              >Home
-              <!-- <i class="ri-arrow-down-s-line"></i
-            > -->
-            </a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="slider-index.html" class="anchor-design"
-                  >Home Slider</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="index.html" class="anchor-design">Home Solid</a>
-              </li>
-              <li class="li-design">
-                <a href="image-index.html" class="anchor-design">Home image </a>
-              </li>
-              <li class="li-design">
-                <a href="video-index.html" class="anchor-design">Home Video</a>
-              </li>
-            </ul> -->
+            <a href="index.html" class="navbar-anchor">Home </a>
           </li>
           <li class="li-nav">
             <a href="service.html" class="navbar-anchor">Service</a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="services-1.html" class="anchor-design">Services 1</a>
-              </li>
-              <li class="li-design">
-                <a href="services-2.html" class="anchor-design">Services 2</a>
-              </li>
-              <li class="li-design">
-                <a href="services-detail.html" class="anchor-design"
-                  >Services Detail 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="services-detail2.html" class="anchor-design"
-                  >Services Detail 2</a
-                >
-              </li>
-            </ul> -->
           </li>
           <li class="li-nav">
             <a href="about-us.html" class="navbar-anchor">About Us </a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="about-us.html" class="anchor-design">About Us</a>
-              </li>
-              <li class="li-design">
-                <a href="team-1.html" class="anchor-design">Team 1</a>
-              </li>
-              <li class="li-design">
-                <a href="team-2.html" class="anchor-design">Team 2</a>
-              </li>
-              <li class="li-design">
-                <a href="single-team.html" class="anchor-design">Single Team</a>
-              </li>
-              <li class="li-design">
-                <a href="pricing-plan.html" class="anchor-design"
-                  >Pricing plan</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="testimonial.html" class="anchor-design"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="faq.html" class="anchor-design">FAQs</a>
-              </li>
-              <li class="li-design">
-                <a href="404error.html" class="anchor-design">404 Error</a>
-              </li>
-              <li class="li-design">
-                <a href="coming-soon.html" class="anchor-design">Coming soon</a>
-              </li>
-            </ul> -->
           </li>
-          <!-- <li class="li-nav">
-            <a href="javascript:void(0)" class="navbar-anchor"
-              >Project <i class="ri-arrow-down-s-line"></i
-            ></a>
-            <ul class="ul-design">
-              <li class="li-design">
-                <a href="projects-1.html" class="anchor-design"
-                  >Projects 1 - Grid</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-2.html" class="anchor-design"
-                  >Projects 2 - Vertical</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-3.html" class="anchor-design"
-                  >Projects 3 - Spit</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-4.html" class="anchor-design"
-                  >Projects 4 - Creative</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="single-projects.html" class="anchor-design"
-                  >Project Details 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="single-projects2.html" class="anchor-design"
-                  >Project Details 2</a
-                >
-              </li>
-            </ul>
-          </li> -->
-          <!-- <li class="li-nav">
-            <a href="javascript:void(0)" class="navbar-anchor"
-              >Blog <i class="ri-arrow-down-s-line"></i
-            ></a>
-            <ul class="ul-design">
-              <li class="li-design">
-                <a href="blogs-1.html" class="anchor-design">Blog 1</a>
-              </li>
-              <li class="li-design">
-                <a href="blogs-2.html" class="anchor-design">Blog 2</a>
-              </li>
-              <li class="li-design">
-                <a href="blog-detail.html" class="anchor-design"
-                  >Blog Detail 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="blog-detail2.html" class="anchor-design"
-                  >Blog Detail 2</a
-                >
-              </li>
-            </ul>
-          </li> -->
+          <li class="li-nav">
+            <a href="gallery.html" class="navbar-anchor">Gallery </a>
+          </li>
+          <li>
+            <a href="contact.html" class="navbar-anchor">Contact Us </a>
+          </li>
         </ul>
+
         <div class="contact-data">
-          <a href="contact.html" class="button-design">
-            <span class="btn-text">Contact Us</span>
-            <img src="assets/images/hero/btn-image-two.svg" alt="img" />
+          <a href="#" class="button-design">
+            <span class="btn-text">Brochure</span>
+            <img src="assets/home/download.png" alt="img" />
           </a>
           <a href="javascript:void(0)" class="menu-design">
             <img src="assets/images/hero/menu.svg" alt="menu" />
@@ -275,52 +227,15 @@
               </div> -->
             </li>
             <li class="menu-li">
+              <a href="#" class="menu-anhor">
+                <p class="text-menu">Gallery</p>
+              </a>
+            </li>
+            <li class="menu-li">
               <a href="contact.html" class="menu-anhor">
                 <p class="text-menu">Contact Us</p>
               </a>
             </li>
-            <!-- <li class="menu-li">
-              <a href="javascript:void(0)" class="menu-anhor">
-                <p class="text-menu">Project</p>
-                <i class="ri-add-line"></i>
-              </a>
-              <div class="under-menu-li">
-                <a href="projects-1.html" class="ander-li-achor"
-                  >Projects 1 - Grid</a
-                >
-                <a href="projects-2.html" class="ander-li-achor"
-                  >Projects 2 - Vertical</a
-                >
-                <a href="projects-3.html" class="ander-li-achor"
-                  >Projects 3 - Spit</a
-                >
-                <a href="projects-4.html" class="ander-li-achor"
-                  >Projects 4 - Creative</a
-                >
-                <a href="single-projects.html" class="ander-li-achor"
-                  >Project Details 1</a
-                >
-                <a href="single-projects2.html" class="ander-li-achor"
-                  >Project Details 2</a
-                >
-              </div>
-            </li> -->
-            <!-- <li class="menu-li">
-              <a href="javascript:void(0)" class="menu-anhor">
-                <p class="text-menu">Blog</p>
-                <i class="ri-add-line"></i>
-              </a>
-              <div class="under-menu-li">
-                <a href="blogs-1.html" class="ander-li-achor">Blog 1</a>
-                <a href="blogs-2.html" class="ander-li-achor">Blog 2</a>
-                <a href="blog-detail.html" class="ander-li-achor"
-                  >Blog Detail 1</a
-                >
-                <a href="blog-detail2.html" class="ander-li-achor"
-                  >Blog Detail 2</a
-                >
-              </div>
-            </li> -->
           </ul>
         </div>
         <div class="data-main-contact">
@@ -428,8 +343,8 @@
                 <p class="home-made-title">Eco-Friendly Energy</p>
               </div>
               <h1 class="home-hero-title animation-data">
-                Save More, Live Brighter
-                <span> Go Solar With Vishwa Solarize</span>
+                Go Solar With Vishwa Solarize –
+                <span> A Trusted Mahindra channel partner</span>
               </h1>
               <p class="home-desc-made animation-data">
                 Transform your energy future with Vishwa Solarize, your trusted
@@ -439,7 +354,7 @@
                 electricity bills while contributing to a cleaner, greener
                 tomorrow.
               </p>
-              <a href="services-1.html" class="button d-inline-flex">
+              <a href="service.html" class="button d-inline-flex">
                 <span class="btn-text">Our Services</span>
                 <img src="assets/images/hero/btn-image.svg" alt="image" />
               </a>
@@ -496,7 +411,7 @@
                       with stable power supply. Net metering enabled – sell
                       excess power back to the grid.
                     </p>
-                    <a href="services-detail.html" class="services-btn">
+                    <a href="#" class="services-btn">
                       <p>Learn More</p>
                       <img src="assets/images/services/trac.png" alt="trac" />
                     </a>
@@ -504,7 +419,10 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                   <div class="boxdesign-services-center zoom_in">
-                    <img src="assets/images/services/service.svg" alt="image" />
+                    <img
+                      src="assets/images/services/services-2.svg"
+                      alt="image"
+                    />
                     <p class="solar-services-center">Solar Hybrid System</p>
                     <p class="solar-desc-center">
                       Best for areas with frequent power cuts. Combines grid
@@ -512,7 +430,7 @@
                       supply. Store excess solar energy for nighttime use and
                       complete energy independence.
                     </p>
-                    <a href="services-detail.html" class="services-btn-center">
+                    <a href="#" class="services-btn-center">
                       <p>Learn More</p>
                       <img src="assets/images/services/trac.png" alt="trac" />
                     </a>
@@ -531,10 +449,33 @@
                       terraces and street lights for communities – zero
                       electricity costs with maximum impact.
                     </p>
-                    <a href="services-detail.html" class="services-btn">
+                    <a href="#" class="services-btn">
                       <p>Learn More</p>
                       <img src="assets/images/services/trac.png" alt="trac" />
                     </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add this new financing highlight section -->
+              <div class="row mt-5">
+                <div class="col-12">
+                  <div
+                    style="
+                     
+                      padding: 25px;
+                      border-radius: 10px;
+                      text-align: center;
+                      color: white;
+                    "
+                  >
+                    <h3 style="color: white; margin-bottom: 10px">
+                      <i class="ri-bank-fill" style="font-size: 28px"></i> Easy
+                      Financing Available
+                    </h3>
+                    <p style="font-size: 18px; margin: 0; font-weight: 600">
+                      Government and Private bank 100% loan available - Make
+                      solar affordable with easy EMI options!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -871,6 +812,64 @@
       </div>
       <!-- ========================= [ Why Choose Section Exit ] ========================= -->
 
+      <!-- ========================= [ Government Scheme Section Start ] ========================= -->
+      <!-- <section class="government-scheme-section bg-container" id="govt-scheme">
+        <div class="container">
+          <div class="success-detail fade_down text-center">
+            <div class="box-data-design">
+              <div class="dot-data"></div>
+              <p class="title-font">Government Scheme Projects</p>
+            </div>
+            <h2 class="title-about">
+              Empowering Institutions through
+              <span>Government-Backed Solar</span>
+            </h2>
+            <p class="desc-title" style="max-width: 800px; margin: 0 auto">
+              Discover how Vishwa Solarize is helping educational and religious
+              institutions harness the power of solar energy through state and
+              central government schemes.
+            </p>
+          </div>
+
+          <div class="row mt-5">
+          
+            <div class="col-lg-6 col-md-12 zoom_in mb-4">
+              <div class="govt-project-box">
+                <h3 class="project-title">A.G. High School</h3>
+                <img
+                  src="assets/home/project.jpg"
+                  alt="Project Photo"
+                  class="img-fluid mb-3 rounded"
+                />
+                <ul class="project-details">
+                  <li><strong>Project Size:</strong> 20 KW</li>
+                  <li><strong>Location:</strong> Dapoli, Ratnagiri</li>
+                  <li><strong>Inverter Brand:</strong> Growatt</li>
+                </ul>
+              </div>
+            </div>
+
+      
+            <div class="col-lg-6 col-md-12 zoom_in mb-4">
+              <div class="govt-project-box">
+                <h3 class="project-title">Sant Dnyaneshwar Maharaj Sansthan</h3>
+                <img
+                  src="assets/home/project1.jpg"
+                  alt="Project Photo"
+                  class="img-fluid mb-3 rounded"
+                />
+                <ul class="project-details">
+                  <li><strong>Project Size:</strong> 20 KW + 60 KW</li>
+                  <li><strong>Location:</strong> Alandi, Pune</li>
+                  <li><strong>Inverter Brand:</strong> Growatt</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- ========================= [ Government Scheme Section End ] ========================= -->
+
       <!-- ========================= [ Our Success Section Start ] ========================= -->
       <div class="success-data">
         <div class="container">
@@ -888,6 +887,55 @@
           <div>
             <div class="success-data-design">
               <div class="image-data-succes">
+                <img src="assets/home/oursucess/project.png" alt="image" />
+                <div class="overlay-succes">
+                  <p class="sucess-title">
+                    A.G. High School – Dapoli, Ratnagiri
+                  </p>
+                  <p class="success-desc">
+                    20KW solar system installed under government scheme to power
+                    the school's classrooms and reduce operational costs.
+                    Inverter: Growatt.
+                  </p>
+                  <div class="data-sucess">
+                    <a href="gallery.html" class="button mt-0">
+                      <span class="btn-text">View Details</span>
+                      <img
+                        src="assets/images/hero/btn-image.svg"
+                        alt="button-arrow"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="success-data-design">
+              <div class="image-data-succes">
+                <img src="assets/home/oursucess/project1.png" alt="image" />
+                <div class="overlay-succes">
+                  <p class="sucess-title">
+                    Sant Dnyaneshwar Maharaj Sansthan – Alandi, Pune
+                  </p>
+                  <p class="success-desc">
+                    20KW + 60KW solar systems installed across the spiritual
+                    complex to support religious and community services.
+                    Inverter: Growatt.
+                  </p>
+                  <div class="data-sucess">
+                    <a href="gallery.html" class="button mt-0">
+                      <span class="btn-text">Read More</span>
+                      <img src="assets/images/hero/btn-image.svg" alt="image" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="success-data-design">
+              <div class="image-data-succes">
                 <img src="assets/home/oursucess/image1.png" alt="image" />
                 <div class="overlay-succes">
                   <p class="sucess-title">
@@ -899,7 +947,7 @@
                     environment.
                   </p>
                   <div class="data-sucess">
-                    <a href="single-projects.html" class="button mt-0">
+                    <a href="gallery.html" class="button mt-0">
                       <span class="btn-text">Read More</span>
                       <img src="assets/images/hero/btn-image.svg" alt="image" />
                     </a>
@@ -920,7 +968,7 @@
                     cuts.
                   </p>
                   <div class="data-sucess">
-                    <a href="single-projects.html" class="button mt-0">
+                    <a href="gallery.html" class="button mt-0">
                       <span class="btn-text">Read More</span>
                       <img src="assets/images/hero/btn-image.svg" alt="image" />
                     </a>
@@ -940,7 +988,7 @@
                     provide sustainable energy solutions for communities.
                   </p>
                   <div class="data-sucess">
-                    <a href="single-projects.html" class="button mt-0">
+                    <a href="gallery.html" class="button mt-0">
                       <span class="btn-text">Read More</span>
                       <img src="assets/images/hero/btn-image.svg" alt="image" />
                     </a>
@@ -962,7 +1010,7 @@
                     operations with zero electricity costs.
                   </p>
                   <div class="data-sucess">
-                    <a href="single-projects.html" class="button mt-0">
+                    <a href="gallery.html" class="button mt-0">
                       <span class="btn-text">Read More</span>
                       <img src="assets/images/hero/btn-image.svg" alt="image" />
                     </a>
@@ -982,7 +1030,7 @@
                     students about renewable energy.
                   </p>
                   <div class="data-sucess">
-                    <a href="single-projects.html" class="button mt-0">
+                    <a href="gallery.html" class="button mt-0">
                       <span class="btn-text">Read More</span>
                       <img src="assets/images/hero/btn-image.svg" alt="image" />
                     </a>
@@ -1014,7 +1062,7 @@
                   <div>
                     <div class="image-data-test">
                       <img
-                        src="assets/home/testimonial/image1.png"
+                        src="assets/home/testimonial/image1.pngs"
                         alt="image"
                       />
                     </div>
@@ -1354,7 +1402,7 @@
             </div>
           </div>
           <div class="prosess-call testimonial-main zoom_in">
-            <a href="services-1.html" class="button mt-0">
+            <a href="service.html" class="button mt-0">
               <span class="btn-text">Explore All Services</span>
               <img src="assets/images/hero/btn-image.svg" alt="image" />
             </a>
@@ -2015,6 +2063,22 @@
       </div>
       <!-- ========================= [ Footer Section Exit ] ========================= -->
     </div>
+
+    <!-- Floating Contact Icons -->
+    <div class="floating-icons">
+      <a href="tel:+917020389337" class="float-btn call-btn" title="Call Us">
+        <i class="ri-phone-fill"></i>
+      </a>
+      <a
+        href="https://wa.me/917020389337"
+        target="_blank"
+        class="float-btn whatsapp-btn"
+        title="Chat on WhatsApp"
+      >
+        <i class="ri-whatsapp-fill"></i>
+      </a>
+    </div>
+
     <div class="bottom-line-scotter"></div>
     <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
     <!-- ====================== [ Jquery File ] ========================= -->

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <>
     <meta charset="UTF-8" />
     <link
       rel="shortcut icon"
@@ -24,6 +24,42 @@
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
+    
+    <style>
+      .floating-icons {
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 999;
+        right: 30px;
+      }
+
+      .float-btn {
+        width: 48px;
+        height: 48px;
+        background-color: #25d366; /* WhatsApp default */
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-size: 22px;
+        transition: all 0.3s ease;
+      }
+
+      .call-btn {
+        background-color: #0d6efd; /* Bootstrap blue */
+      }
+
+      .float-btn:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
 
   <body>
@@ -44,151 +80,26 @@
         </div>
         <ul class="ul-nav">
           <li class="li-nav">
-            <a href="index.html" class="navbar-anchor"
-              >Home
-              <!-- <i class="ri-arrow-down-s-line"></i
-            > -->
-            </a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="slider-index.html" class="anchor-design"
-                  >Home Slider</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="index.html" class="anchor-design">Home Solid</a>
-              </li>
-              <li class="li-design">
-                <a href="image-index.html" class="anchor-design">Home image </a>
-              </li>
-              <li class="li-design">
-                <a href="video-index.html" class="anchor-design">Home Video</a>
-              </li>
-            </ul> -->
+            <a href="index.html" class="navbar-anchor">Home </a>
           </li>
           <li class="li-nav">
             <a href="service.html" class="navbar-anchor">Service</a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="services-1.html" class="anchor-design">Services 1</a>
-              </li>
-              <li class="li-design">
-                <a href="services-2.html" class="anchor-design">Services 2</a>
-              </li>
-              <li class="li-design">
-                <a href="services-detail.html" class="anchor-design"
-                  >Services Detail 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="services-detail2.html" class="anchor-design"
-                  >Services Detail 2</a
-                >
-              </li>
-            </ul> -->
           </li>
           <li class="li-nav">
             <a href="about-us.html" class="navbar-anchor">About Us </a>
-            <!-- <ul class="ul-design">
-              <li class="li-design">
-                <a href="about-us.html" class="anchor-design">About Us</a>
-              </li>
-              <li class="li-design">
-                <a href="team-1.html" class="anchor-design">Team 1</a>
-              </li>
-              <li class="li-design">
-                <a href="team-2.html" class="anchor-design">Team 2</a>
-              </li>
-              <li class="li-design">
-                <a href="single-team.html" class="anchor-design">Single Team</a>
-              </li>
-              <li class="li-design">
-                <a href="pricing-plan.html" class="anchor-design"
-                  >Pricing plan</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="testimonial.html" class="anchor-design"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="faq.html" class="anchor-design">FAQs</a>
-              </li>
-              <li class="li-design">
-                <a href="404error.html" class="anchor-design">404 Error</a>
-              </li>
-              <li class="li-design">
-                <a href="coming-soon.html" class="anchor-design">Coming soon</a>
-              </li>
-            </ul> -->
           </li>
-
-          <!-- <li class="li-nav">
-            <a href="javascript:void(0)" class="navbar-anchor"
-              >Project <i class="ri-arrow-down-s-line"></i
-            ></a>
-            <ul class="ul-design">
-              <li class="li-design">
-                <a href="projects-1.html" class="anchor-design"
-                  >Projects 1 - Grid</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-2.html" class="anchor-design"
-                  >Projects 2 - Vertical</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-3.html" class="anchor-design"
-                  >Projects 3 - Spit</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="projects-4.html" class="anchor-design"
-                  >Projects 4 - Creative</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="single-projects.html" class="anchor-design"
-                  >Project Details 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="single-projects2.html" class="anchor-design"
-                  >Project Details 2</a
-                >
-              </li>
-            </ul>
-          </li> -->
-          <!-- <li class="li-nav">
-            <a href="javascript:void(0)" class="navbar-anchor"
-              >Blog <i class="ri-arrow-down-s-line"></i
-            ></a>
-            <ul class="ul-design">
-              <li class="li-design">
-                <a href="blogs-1.html" class="anchor-design">Blog 1</a>
-              </li>
-              <li class="li-design">
-                <a href="blogs-2.html" class="anchor-design">Blog 2</a>
-              </li>
-              <li class="li-design">
-                <a href="blog-detail.html" class="anchor-design"
-                  >Blog Detail 1</a
-                >
-              </li>
-              <li class="li-design">
-                <a href="blog-detail2.html" class="anchor-design"
-                  >Blog Detail 2</a
-                >
-              </li>
-            </ul>
-          </li> -->
+          <li class="li-nav">
+            <a href="gallery.html" class="navbar-anchor">Gallery </a>
+          </li>
+          <li>
+            <a href="contact.html" class="navbar-anchor">Contact Us </a>
+          </li>
         </ul>
+
         <div class="contact-data">
-          <a href="contact.html" class="button-design">
-            <span class="btn-text">Contact Us</span>
-            <img src="assets/images/hero/btn-image-two.svg" alt="img" />
+          <a href="#" class="button-design">
+            <span class="btn-text">Brochure</span>
+            <img src="assets/home/download.png" alt="img" />
           </a>
           <a href="javascript:void(0)" class="menu-design">
             <img src="assets/images/hero/menu.svg" alt="menu" />
@@ -268,52 +179,15 @@
               </div> -->
             </li>
             <li class="menu-li">
+              <a href="#" class="menu-anhor">
+                <p class="text-menu">Gallery</p>
+              </a>
+            </li>
+            <li class="menu-li">
               <a href="contact.html" class="menu-anhor">
                 <p class="text-menu">Contact Us</p>
               </a>
             </li>
-            <!-- <li class="menu-li">
-              <a href="javascript:void(0)" class="menu-anhor">
-                <p class="text-menu">Project</p>
-                <i class="ri-add-line"></i>
-              </a>
-              <div class="under-menu-li">
-                <a href="projects-1.html" class="ander-li-achor"
-                  >Projects 1 - Grid</a
-                >
-                <a href="projects-2.html" class="ander-li-achor"
-                  >Projects 2 - Vertical</a
-                >
-                <a href="projects-3.html" class="ander-li-achor"
-                  >Projects 3 - Spit</a
-                >
-                <a href="projects-4.html" class="ander-li-achor"
-                  >Projects 4 - Creative</a
-                >
-                <a href="single-projects.html" class="ander-li-achor"
-                  >Project Details 1</a
-                >
-                <a href="single-projects2.html" class="ander-li-achor"
-                  >Project Details 2</a
-                >
-              </div>
-            </li> -->
-            <!-- <li class="menu-li">
-              <a href="javascript:void(0)" class="menu-anhor">
-                <p class="text-menu">Blog</p>
-                <i class="ri-add-line"></i>
-              </a>
-              <div class="under-menu-li">
-                <a href="blogs-1.html" class="ander-li-achor">Blog 1</a>
-                <a href="blogs-2.html" class="ander-li-achor">Blog 2</a>
-                <a href="blog-detail.html" class="ander-li-achor"
-                  >Blog Detail 1</a
-                >
-                <a href="blog-detail2.html" class="ander-li-achor"
-                  >Blog Detail 2</a
-                >
-              </div>
-            </li> -->
           </ul>
         </div>
         <div class="data-main-contact">
@@ -408,6 +282,7 @@
       </div>
     </div>
     <!-- ================== menubar Responsive Exit ================== -->
+
     <!-- ========================= [ Header Section Exit ] ========================= -->
     <div class="js-scroll">
       <!-- ========================= [ hero section all separate start ] ========================= -->
@@ -1189,13 +1064,13 @@
                     <p class="center-footer-title">Services</p>
                     <ul class="footer-ul">
                       <li class="footer-li">
-                        <a href="services-detail.html"> Solar On-Grid System</a>
+                        <a href="service.html"> Solar On-Grid System</a>
                       </li>
                       <li class="footer-li">
-                        <a href="services-detail.html">Solar Hybrid System</a>
+                        <a href="service.html">Solar Hybrid System</a>
                       </li>
                       <li class="footer-li">
-                        <a href="services-detail.html"
+                        <a href="service.html"
                           >Solar Decorative Lighting</a
                         >
                       </li>
@@ -1299,6 +1174,22 @@
       </div>
       <!-- ========================= [ Footer Section Exit ] ========================= -->
     </div>
+
+     <!-- Floating Contact Icons -->
+    <div class="floating-icons">
+      <a href="tel:+917020389337" class="float-btn call-btn" title="Call Us">
+        <i class="ri-phone-fill"></i>
+      </a>
+      <a
+        href="https://wa.me/917020389337"
+        target="_blank"
+        class="float-btn whatsapp-btn"
+        title="Chat on WhatsApp"
+      >
+        <i class="ri-whatsapp-fill"></i>
+      </a>
+    </div>
+
     <div class="bottom-line-scotter"></div>
     <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
     <!-- ====================== [ Jquery File ] ========================= -->

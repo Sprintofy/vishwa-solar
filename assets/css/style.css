@@ -375,7 +375,8 @@ body {
 
 .button-design img {
   width: 100%;
-  max-width: 30px;
+
+  height: 20px;
 }
 
 .button-design:before,
@@ -4761,6 +4762,9 @@ li.slick-active {
 
 .contact-det {
   background-image: url(../contactus/hero.png);
+}
+.gallery-det {
+  background-image: url(../gallery/hero.jpg);
 }
 
 .blog-separate-image {

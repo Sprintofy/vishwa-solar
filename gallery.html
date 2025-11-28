@@ -63,6 +63,146 @@
         transform: scale(1.1);
       }
     </style>
+    <style>
+      /* === Gallery Section Container === */
+      .gallery-section {
+        padding: 100px 0;
+        background: #f8f9fa;
+      }
+
+      .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      /* === Section Title Styling === */
+      .gallery-container h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .gallery-container p.section-desc {
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 50px;
+      }
+
+      /* === Gallery Grid === */
+      .vs-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 100px;
+      }
+
+      /* === Gallery Card === */
+      .vs-gallery-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        height: 400px;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .vs-gallery-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      /* === Image & Overlay === */
+      .vs-gallery-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .vs-gallery-card:hover .vs-gallery-image img {
+        transform: scale(1.1);
+      }
+
+      .vs-gallery-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.8)
+        );
+        color: #fff;
+        padding: 30px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      .vs-gallery-card:hover .vs-gallery-overlay {
+        opacity: 1;
+      }
+
+      /* === Typography === */
+      .vs-gallery-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #fff;
+        line-height: 1.3;
+      }
+
+      .vs-gallery-desc {
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      /* === Responsive Design === */
+      @media (max-width: 992px) {
+        .vs-gallery-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .vs-gallery-card {
+          height: 350px;
+        }
+
+        .gallery-container h2 {
+          font-size: 30px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .gallery-section {
+          padding: 60px 0;
+        }
+
+        .vs-gallery-card {
+          height: 280px;
+          border-radius: 15px;
+        }
+
+        .vs-gallery-title {
+          font-size: 18px;
+        }
+
+        .vs-gallery-desc {
+          font-size: 14px;
+        }
+
+        .gallery-container p.section-desc {
+          font-size: 16px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -290,211 +430,116 @@
     <div class="js-scroll">
       <!-- ========================= [ hero section all separate start ] ========================= -->
       <div class="bg-container hero-data-bottom">
-        <div class="services-home-hero contact-det">
+        <div class="services-home-hero gallery-det">
           <div class="title-of-hero">
-            <p>Contact Us</p>
-            <span><a href="index.html">Home</a> - Contact Us</span>
+            <p>Gallery</p>
+            <span><a href="index.html">Home</a> - Gallery</span>
           </div>
         </div>
       </div>
       <!-- ========================= [ hero section all separate Exit ] ========================= -->
-      <!-- ========================= [ Error section all separate Start ] ========================= -->
-      <div class="about-data">
-        <div class="container">
-          <div class="row contact-sperow">
-            <div class="col-xl-4 col-lg-4 col-md-12">
-              <div class="left-contact">
-                <p class="contatc-title">Contact Us For Any Queries?</p>
-                <p class="contact-desc">
-                  Our goal is clear: offer the most competitive pricing with
-                  certified electricians.
+
+      <!-- ========================= [ Gallery Section Start ] ========================= -->
+      <section class="gallery-section">
+        <div class="gallery-container">
+          <h2>Our Successful Solar Installations</h2>
+          <p class="section-desc">
+            Explore how Vishwa Solarize has empowered homes, businesses, and
+            farmers across Maharashtra.
+          </p>
+
+          <div class="vs-gallery-grid">
+            <!-- Card 1 -->
+            <div class="vs-gallery-card">
+              <div class="vs-gallery-image">
+                <img
+                  src="assets/home/oursucess/image1.png"
+                  alt="Solar Project Pune"
+                />
+              </div>
+              <div class="vs-gallery-overlay">
+                <p class="vs-gallery-title">🏠 Residential Solar – Pune</p>
+                <p class="vs-gallery-desc">
+                  Installed 3kW On-Grid system that meets the family’s energy
+                  demands and reduces monthly bills by ₹3,500.
                 </p>
-                <div class="contact-data-image">
-                  <img src="assets/contactus/image1.png" alt="image" />
-                </div>
-                <div class="data-contact-left">
-                  <p class="contatc-name">Contact Us</p>
-                  <div class="name-contact">
-                    <a href="tel:+919876543210" class="contact-anchor">
-                      <img src="assets/images/contact/call.png" alt="img" />
-                      <p>+91 7020389337</p>
-                    </a>
-                    <a href="mailto:info@example.com" class="contact-anchor">
-                      <img src="assets/images/contact/mail.png" alt="img" />
-                      <p>vishwasolarise123@gmail.com</p>
-                    </a>
-                    <a
-                      href="https://www.google.com/maps?q=New+York,+USA"
-                      target="_blank"
-                      class="contact-anchor"
-                    >
-                      <img src="assets/images/contact/call.png" alt="img" />
-                      <p>
-                        Pune , Satara , Kurkumbh , Sangli , Kadegaon , Dapoli.
-                      </p>
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="col-xl-8 col-lg-8 col-md-12">
-              <div class="right-contact">
-                <p class="contatc-title">How can we help you today?</p>
-                <p class="right-contact-desc">
-                  Let us know who you are and what you’re looking for below.
-                </p>
-                <div class="contact-rowed row">
-                  <div class="col-xl-6 col-lg-6 col-md-12 input-appoint-beat">
-                    <div class="data-max">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        autocomplete="name"
-                      />
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/user.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-12 input-appoint-beat">
-                    <div class="data-max">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Email Address"
-                        autocomplete="email"
-                      />
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/mail.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-12 input-appoint-beat">
-                    <div class="data-max">
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Phone number"
-                        autocomplete="tel"
-                      />
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/call.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 input-appoint-beat">
-                    <div class="data-max name-class">
-                      <input
-                        type="text"
-                        id="datepicker"
-                        autocomplete="off"
-                        class="mega-input"
-                        placeholder="Select Date"
-                      />
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/date.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 input-appoint-beat">
-                    <div class="data-max">
-                      <select class="select-home">
-                        <option value="Property Type" selected>
-                          Property Type
-                        </option>
-                        <option value="Residential">Residential</option>
-                        <option value="Commercial">Commercial</option>
-                        <option value="Industrial">Industrial</option>
-                        <option value="Agricultural">Agricultural</option>
-                        <option value="other">Other</option>
-                      </select>
 
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/home.svg"
-                          alt="user"
-                        />
-                      </div>
-                      <div class="down-btn">
-                        <img
-                          src="assets/images/appointment/down.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div class="col-lg-6 col-md-6 input-appoint-beat">
-                    <div class="data-max">
-                      <input
-                        type="number"
-                        placeholder="Enter a number"
-                        min="1"
-                        max="100"
-                        step="1"
-                        class="no-spinner"
-                      />
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/bill.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div> -->
-                  <div class="col-12 input-appoint-data">
-                    <div class="data-max">
-                      <textarea
-                        placeholder="Write Message..."
-                        class="textarea-box"
-                      ></textarea>
-                      <div class="property-detail">
-                        <img
-                          src="assets/images/appointment/message.svg"
-                          alt="user"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="butn-submit-left">
-                    <a href="index.html" class="button d-inline-flex mt-0">
-                      <span class="btn-text">Submit Now</span>
-                      <img src="assets/images/hero/btn-image.svg" alt="image" />
-                    </a>
-                  </div>
-                </div>
+            <!-- Card 2 -->
+            <div class="vs-gallery-card">
+              <div class="vs-gallery-image">
+                <img
+                  src="assets/home/oursucess/image2.png"
+                  alt="Solar Project Satara"
+                />
+              </div>
+              <div class="vs-gallery-overlay">
+                <p class="vs-gallery-title">🏢 Commercial Solar – Satara</p>
+                <p class="vs-gallery-desc">
+                  10kW Hybrid System offering consistent backup and helping
+                  businesses slash rising electricity expenses.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="vs-gallery-card">
+              <div class="vs-gallery-image">
+                <img
+                  src="assets/home/oursucess/image3.png"
+                  alt="Solar Project Sangli"
+                />
+              </div>
+              <div class="vs-gallery-overlay">
+                <p class="vs-gallery-title">🏭 Industrial Solar – Sangli</p>
+                <p class="vs-gallery-desc">
+                  25kW system customized for machinery, reducing operational
+                  load and supporting green goals.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="vs-gallery-card">
+              <div class="vs-gallery-image">
+                <img
+                  src="assets/home/oursucess/image4.png"
+                  alt="Solar Project Dapoli"
+                />
+              </div>
+              <div class="vs-gallery-overlay">
+                <p class="vs-gallery-title">🌾 Agricultural Solar – Dapoli</p>
+                <p class="vs-gallery-desc">
+                  Smart solar pumping and lights – saving farmers from rising
+                  fuel costs and power shortages.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="vs-gallery-card">
+              <div class="vs-gallery-image">
+                <img
+                  src="assets/home/oursucess/image5.png"
+                  alt="Solar Project Dapoli"
+                />
+              </div>
+              <div class="vs-gallery-overlay">
+                <p class="vs-gallery-title">
+                  🎓 Educational Institution - Pune
+                </p>
+                <p class="vs-gallery-desc">
+                  15kW solar system powering this school while teaching students
+                  about renewable energy.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- ========================= [ Error section all separate Exit ] ========================= -->
-      <!-- <div class="bg-container">
-         <div class="main-location">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193597.13828382973!2d-74.2913111195153!3d40.69698241526669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sau!4v1738663272509!5m2!1sen!2sau"
-            width="1880"
-            height="600"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div> 
-      </div>  -->
+      </section>
+      <!-- ========================= [ Gallery Section End ] ========================= -->
+
       <!-- ========================= [ Footer Section Start ] ========================= -->
       <div class="footer" id="footer">
         <div class="container">
@@ -587,9 +632,7 @@
                         <a href="service.html">Solar Hybrid System</a>
                       </li>
                       <li class="footer-li">
-                        <a href="service.html"
-                          >Solar Decorative Lighting</a
-                        >
+                        <a href="service.html">Solar Decorative Lighting</a>
                       </li>
                       <!-- <li class="footer-li">
                         <a href="services-detail.html">Solar Energy</a>
@@ -691,6 +734,8 @@
       </div>
       <!-- ========================= [ Footer Section Exit ] ========================= -->
     </div>
+    <div class="bottom-line-scotter"></div>
+    <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
 
     <!-- Floating Contact Icons -->
     <div class="floating-icons">
@@ -707,69 +752,7 @@
       </a>
     </div>
 
-    <div class="bottom-line-scotter"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const submitBtn = document.querySelector(".butn-submit-left a");
-
-        submitBtn.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          // Collect form data
-          const formData = {
-            name: document.querySelector('input[placeholder="Name"]').value,
-            email: document.querySelector('input[placeholder="Email Address"]')
-              .value,
-            phone: document.querySelector('input[placeholder="Phone number"]')
-              .value,
-            date: document.querySelector("#datepicker").value,
-            propertyType: document.querySelector(".select-home").value,
-            message: document.querySelector(".textarea-box").value,
-          };
-
-          // Validate form
-          if (!formData.name || !formData.email || !formData.phone) {
-            alert("Please fill in all required fields");
-            return;
-          }
-
-          // Create email body
-          const emailBody = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Date: ${formData.date}
-Property Type: ${formData.propertyType}
-Message: ${formData.message}
-      `.trim();
-
-          // Create mailto link
-          const mailtoLink = `mailto:vishwasolarise123@gmail.com?subject=New Contact Form Submission from ${
-            formData.name
-          }&body=${encodeURIComponent(emailBody)}`;
-
-          // Open default email client
-          window.location.href = mailtoLink;
-
-          // Optional: Show confirmation
-          setTimeout(() => {
-            if (confirm("Email client opened. Did you send the email?")) {
-              // Clear form
-              document.querySelector('input[placeholder="Name"]').value = "";
-              document.querySelector(
-                'input[placeholder="Email Address"]'
-              ).value = "";
-              document.querySelector(
-                'input[placeholder="Phone number"]'
-              ).value = "";
-              document.querySelector("#datepicker").value = "";
-              document.querySelector(".select-home").value = "Property Type";
-              document.querySelector(".textarea-box").value = "";
-            }
-          }, 1000);
-        });
-      });
-    </script>
+    <!-- Scroll to Top Already Present -->
     <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
     <!-- ====================== [ Jquery File ] ========================= -->
     <script src="assets/js/jquery.min.js"></script>
