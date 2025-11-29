@@ -4766,6 +4766,9 @@ li.slick-active {
 .gallery-det {
   background-image: url(../gallery/hero.jpg);
 }
+.scheme-det {
+  background-image: url(../scheme/hero.jpg);
+}
 
 .blog-separate-image {
   width: 100%;

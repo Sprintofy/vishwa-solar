@@ -8,7 +8,7 @@
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vishwa Solarize | Contact Us</title>
+    <title>Vishwa Solarize | Schemes & Finance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +25,151 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
     <style>
+      /* Page Specific Styles matching Home Page Theme */
       #footer {
         margin-top: 200px;
       }
 
+      .scheme-hero {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .bank-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .bank-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+        border-color: #9fd456; /* Assuming this is the brand orange/yellow */
+      }
+
+      /* New styles for the image wrapper to ensure consistent height */
+      .img-wrapper {
+        width: 100%;
+        height: 80px; /* Fixed height for alignment */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      /* Styles for the actual logo image */
+      .bank-img {
+        max-width: 80%; /* Prevents logo from being too wide */
+        max-height: 100%; /* Prevents logo from being too tall */
+        object-fit: contain; /* Ensures logo isn't stretched */
+        filter: grayscale(0%); /* Optional: Start color or bw */
+        transition: all 0.3s ease;
+      }
+
+      /* Optional: Make logo pop on hover */
+      .bank-card:hover .bank-img {
+        transform: scale(1.1);
+      }
+
+      .bank-name {
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+        font-size: 16px;
+      }
+      .bank-icon {
+        font-size: 4rem;
+        color: #14213d; /* Dark Blue */
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+      }
+
+      .bank-card:hover .bank-icon {
+        color: #9fd456;
+      }
+
+      .bank-name {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        margin: 0;
+      }
+
+      /* PDF Download Card Styling */
+      .doc-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      .doc-card:hover {
+        border-color: #9fd456;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .doc-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .doc-icon {
+        font-size: 2.5rem;
+        color: #e74c3c; /* PDF Red */
+      }
+
+      .doc-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #14213d;
+        margin: 0;
+      }
+
+      .download-btn-sm {
+        background: #9fd456;
+        color: #000000;
+        padding: 8px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .download-btn-sm:hover {
+        background: #fca311;
+        color: #fff;
+      }
+
+      #footer {
+        margin-top: 100px;
+      }
+
+      /* Floating Icons from Home */
       .floating-icons {
         position: fixed;
         bottom: 100px;
@@ -43,7 +184,7 @@
       .float-btn {
         width: 48px;
         height: 48px;
-        background-color: #25d366; /* WhatsApp default */
+        background-color: #25d366;
         color: white;
         border-radius: 50%;
         display: flex;
@@ -56,151 +197,11 @@
       }
 
       .call-btn {
-        background-color: #0d6efd; /* Bootstrap blue */
+        background-color: #0d6efd;
       }
 
       .float-btn:hover {
         transform: scale(1.1);
-      }
-    </style>
-    <style>
-      /* === Gallery Section Container === */
-      .gallery-section {
-        padding: 100px 0;
-        background: #f8f9fa;
-      }
-
-      .gallery-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-      }
-
-      /* === Section Title Styling === */
-      .gallery-container h2 {
-        font-size: 36px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      .gallery-container p.section-desc {
-        font-size: 18px;
-        color: #555;
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto 50px;
-      }
-
-      /* === Gallery Grid === */
-      .vs-gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        margin-bottom: 100px;
-      }
-
-      /* === Gallery Card === */
-      .vs-gallery-card {
-        position: relative;
-        overflow: hidden;
-        border-radius: 20px;
-        height: 400px;
-        width: 100%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .vs-gallery-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-      }
-
-      /* === Image & Overlay === */
-      .vs-gallery-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-      }
-
-      .vs-gallery-card:hover .vs-gallery-image img {
-        transform: scale(1.1);
-      }
-
-      .vs-gallery-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.3),
-          rgba(0, 0, 0, 0.8)
-        );
-        color: #fff;
-        padding: 30px;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-
-      .vs-gallery-card:hover .vs-gallery-overlay {
-        opacity: 1;
-      }
-
-      /* === Typography === */
-      .vs-gallery-title {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #fff;
-        line-height: 1.3;
-      }
-
-      .vs-gallery-desc {
-        font-size: 16px;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
-      }
-
-      /* === Responsive Design === */
-      @media (max-width: 992px) {
-        .vs-gallery-grid {
-          grid-template-columns: 1fr;
-          gap: 30px;
-        }
-
-        .vs-gallery-card {
-          height: 350px;
-        }
-
-        .gallery-container h2 {
-          font-size: 30px;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .gallery-section {
-          padding: 60px 0;
-        }
-
-        .vs-gallery-card {
-          height: 280px;
-          border-radius: 15px;
-        }
-
-        .vs-gallery-title {
-          font-size: 18px;
-        }
-
-        .vs-gallery-desc {
-          font-size: 14px;
-        }
-
-        .gallery-container p.section-desc {
-          font-size: 16px;
-        }
       }
     </style>
   </head>
@@ -213,12 +214,13 @@
       </div>
     </div>
     <!-- ========================= [ Loader Section Exit ] ========================= -->
+
     <!-- ========================= [ Header Section Start ] ========================= -->
     <div class="header" id="header">
       <div class="design-data" data-header>
         <div class="logo-nav">
           <a href="index.html" class="logo-data">
-            <img src="assets/home/navlogo.png" alt="logo" />
+            <img src="assets/home/navlogo2.png" alt="logo" />
           </a>
         </div>
         <ul class="ul-nav">
@@ -238,7 +240,10 @@
             <a href="contact.html" class="navbar-anchor">Contact Us </a>
           </li>
           <li>
-            <a href="scheme.html" class="navbar-anchor">Scheme </a>
+            <!-- Active State Color Applied Inline for Scheme -->
+            <a href="scheme.html" class="navbar-anchor" style="color: #9fd456"
+              >Scheme
+            </a>
           </li>
         </ul>
 
@@ -253,6 +258,7 @@
         </div>
       </div>
     </div>
+
     <!-- ================== menubar Responsive Start ================== -->
     <div class="menu" id="menu">
       <div class="left-design">
@@ -433,126 +439,380 @@
       </div>
     </div>
     <!-- ================== menubar Responsive Exit ================== -->
-
     <!-- ========================= [ Header Section Exit ] ========================= -->
+
     <div class="js-scroll">
-      <!-- ========================= [ hero section all separate start ] ========================= -->
+      <!-- ========================= [ Hero Section ] ========================= -->
       <div class="bg-container hero-data-bottom">
-        <div class="services-home-hero gallery-det">
+        <div class="services-home-hero scheme-det">
           <div class="title-of-hero">
-            <p>Gallery</p>
-            <span><a href="index.html">Home</a> - Gallery</span>
+            <p>Schemes & Finance</p>
+            <span><a href="index.html">Home</a> - Scheme</span>
           </div>
         </div>
       </div>
-      <!-- ========================= [ hero section all separate Exit ] ========================= -->
 
-      <!-- ========================= [ Gallery Section Start ] ========================= -->
-      <section class="gallery-section">
-        <div class="gallery-container">
-          <h2>Our Successful Solar Installations</h2>
-          <p class="section-desc">
-            Explore how Vishwa Solarize has empowered homes, businesses, and
-            farmers across Maharashtra.
-          </p>
+      <!-- ========================= [ Partner Banks Section ] ========================= -->
+      <!-- Header -->
+      <div class="success-detail fade_down mt-5">
+        <div class="box-data-design">
+          <div class="dot-data"></div>
+          <p class="title-font">Bank & Loans</p>
+        </div>
+        <h2 class="title-about">Affordable <span>EMI Options</span></h2>
+        <p class="desc-title" style="max-width: 800px; margin: 0 auto">
+          Our trusted banking partners provide secured and unsecured solar loans
+          with fast digital processing, transparent terms and competitive
+          interest rates — so you can switch to solar confidently.
+        </p>
+      </div>
+      <div class="row mt-5">
+        <!-- Bank Card 1: Bank of Baroda -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.bankofbaroda.in/personal-banking/loans/other-loans/pm-suryaghar-yojana-bundled"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank1.png"
+                alt="Bank of Baroda"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Bank of Baroda</p>
+          </a>
+        </div>
 
-          <div class="vs-gallery-grid">
-            <!-- Card 1 -->
-            <div class="vs-gallery-card">
-              <div class="vs-gallery-image">
-                <img
-                  src="assets/home/oursucess/image1.png"
-                  alt="Solar Project Pune"
-                />
-              </div>
-              <div class="vs-gallery-overlay">
-                <p class="vs-gallery-title">🏠 Residential Solar – Pune</p>
-                <p class="vs-gallery-desc">
-                  Installed 3kW On-Grid system that meets the family’s energy
-                  demands and reduces monthly bills by ₹3,500.
+        <!-- Bank Card 2: Bank of India -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href=" https://bankofindia.co.in/personal-loan/star-rooftop-solar-panel-finance-loan"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank2.png"
+                alt="Bank of India"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Bank of India</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 3: Bank of Maharashtra -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://bankofmaharashtra.in/mahabank-rooftop-solar-panel-loan"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank3.jpg"
+                alt="Bank of Maharashtra"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Bank of Maharashtra</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 4: Canara Bank -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://canarabank.com/canara-rooftop-solar-crts-pmsgy-upto-rs-2-lakhs"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank4.png"
+                alt="Canara Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Canara Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 5: Central Bank of India -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.centralbankofindia.co.in/en/Roof-Top-Solar-Loan-Scheme"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank5.webp"
+                alt="Central Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Central Bank of India</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 6: Indian Bank -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href=" https://www.indianbank.in/blogs/pm-surya-ghar-muft-bijli-yojana-roof-top-solar-loan-scheme-harnessing-solar-power-for-a-brighter-future/"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank6.jpg"
+                alt="Indian Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Indian Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 7: Indian  overseas bank -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.iob.in/IOB-Surya"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank7.png"
+                alt="Indian Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Indian Overseas Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 8: Punjab & Sind Bank -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://punjabandsindbank.co.in/content/rts"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img src="assets/scheme/bank8.png" alt="SBI" class="bank-img" />
+            </div>
+            <p class="bank-name">State Punjab & Sind Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 9: Punjab National Bank-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.pnbindia.in/SCHEME-FOR-FINANCING-OF-ROOFTOP-SOLAR-POWER-SYSTEMS.html"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank9.jpg"
+                alt="Union Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Punjab National Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 10: State Bank of India -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://sbi.co.in/hi/web/personal-banking/loans/pm-surya-ghar-loan-for-solar-roof-top"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank10.png"
+                alt="Punjab National Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">State Bank of India</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 11: UCO Bank -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.ucobank.com/uco-suryodaya-loan"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank11.png"
+                alt="UCO Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">UCO Bank</p>
+          </a>
+        </div>
+
+        <!-- Bank Card 12: Union Bank of India-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-6 mb-4">
+          <a
+            href="https://www.unionbankofindia.co.in/en/Details/union-rooftop-solar"
+            target="_blank"
+            class="bank-card zoom_in"
+          >
+            <div class="img-wrapper">
+              <img
+                src="assets/scheme/bank12.png"
+                alt="UCO Bank"
+                class="bank-img"
+              />
+            </div>
+            <p class="bank-name">Union Bank of India</p>
+          </a>
+        </div>
+      </div>
+      <!-- ========================= [ Private Finance Section ] ========================= -->
+      <div class="bg-container">
+        <div class="container">
+          <div class="success-detail fade_down">
+            <div class="box-data-design">
+              <div class="dot-data"></div>
+              <p class="title-font">Quick Finance</p>
+            </div>
+            <h2 class="title-about">Private <span>Finance Options</span></h2>
+          </div>
+
+          <div class="row mt-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div
+                class="bank-card zoom_in"
+                style="border-bottom: 4px solid #fca311"
+              >
+                <i class="ri-briefcase-4-line bank-icon"></i>
+                <h3 class="bank-name" style="font-size: 24px">Ecofy</h3>
+                <p style="text-align: center; color: #666; margin-top: 10px">
+                  Instant digital approval for solar loans.
                 </p>
               </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="vs-gallery-card">
-              <div class="vs-gallery-image">
-                <img
-                  src="assets/home/oursucess/image2.png"
-                  alt="Solar Project Satara"
-                />
-              </div>
-              <div class="vs-gallery-overlay">
-                <p class="vs-gallery-title">🏢 Commercial Solar – Satara</p>
-                <p class="vs-gallery-desc">
-                  10kW Hybrid System offering consistent backup and helping
-                  businesses slash rising electricity expenses.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="vs-gallery-card">
-              <div class="vs-gallery-image">
-                <img
-                  src="assets/home/oursucess/image3.png"
-                  alt="Solar Project Sangli"
-                />
-              </div>
-              <div class="vs-gallery-overlay">
-                <p class="vs-gallery-title">🏭 Industrial Solar – Sangli</p>
-                <p class="vs-gallery-desc">
-                  25kW system customized for machinery, reducing operational
-                  load and supporting green goals.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="vs-gallery-card">
-              <div class="vs-gallery-image">
-                <img
-                  src="assets/home/oursucess/image4.png"
-                  alt="Solar Project Dapoli"
-                />
-              </div>
-              <div class="vs-gallery-overlay">
-                <p class="vs-gallery-title">🌾 Agricultural Solar – Dapoli</p>
-                <p class="vs-gallery-desc">
-                  Smart solar pumping and lights – saving farmers from rising
-                  fuel costs and power shortages.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="vs-gallery-card">
-              <div class="vs-gallery-image">
-                <img
-                  src="assets/home/oursucess/image5.png"
-                  alt="Solar Project Dapoli"
-                />
-              </div>
-              <div class="vs-gallery-overlay">
-                <p class="vs-gallery-title">
-                  🎓 Educational Institution - Pune
-                </p>
-                <p class="vs-gallery-desc">
-                  15kW solar system powering this school while teaching students
-                  about renewable energy.
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div
+                class="bank-card zoom_in"
+                style="border-bottom: 4px solid #fca311"
+              >
+                <i class="ri-coins-line bank-icon"></i>
+                <h3 class="bank-name" style="font-size: 24px">Solefin</h3>
+                <p style="text-align: center; color: #666; margin-top: 10px">
+                  Tailored financing solutions for rooftop solar.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- ========================= [ Gallery Section End ] ========================= -->
+      </div>
+
+      <!-- ========================= [ Download Resources Section ] ========================= -->
+      <div class="about-data">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 fade_down">
+              <div class="box-data-design">
+                <div class="dot-data"></div>
+                <p class="title-font">Resources</p>
+              </div>
+              <h2 class="title-about" style="text-align: left">
+                Important <span>Documents</span>
+              </h2>
+              <p class="tile-data-about">
+                Download the necessary forms and guidelines to understand the
+                subsidy process and loan requirements better.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <!-- Doc Item 1 -->
+              <div class="doc-card zoom_in">
+                <div class="doc-info">
+                  <i class="ri-file-pdf-2-fill doc-icon"></i>
+                  <div>
+                    <h4 class="doc-title">
+                      PM Surya Ghar Muft Bijli Yogna scheme all details
+                    </h4>
+                    <span style="font-size: 13px; color: #777"
+                      >PDF, 2.4 MB</span
+                    >
+                  </div>
+                </div>
+                <a
+                  href="assets/pdf1.pdf"
+                  class="download-btn-sm"
+                  target="_blank"
+                  download
+                >
+                  Download <i class="ri-download-cloud-line"></i>
+                </a>
+              </div>
+
+              <!-- Doc Item 2 -->
+              <div class="doc-card zoom_in">
+                <div class="doc-info">
+                  <i
+                    class="ri-file-text-line doc-icon"
+                    style="color: #0d6efd"
+                  ></i>
+                  <div>
+                    <h4 class="doc-title">Doc Item 2</h4>
+                    <span style="font-size: 13px; color: #777"
+                      >PDF, 1.1 MB</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="download-btn-sm"
+                  onclick="alert('Demo: Downloading Eligibility...')"
+                >
+                  Download <i class="ri-download-cloud-line"></i>
+                </button>
+              </div>
+
+              <!-- Doc Item 3 -->
+              <div class="doc-card zoom_in">
+                <div class="doc-info">
+                  <i
+                    class="ri-article-line doc-icon"
+                    style="color: #198754"
+                  ></i>
+                  <div>
+                    <h4 class="doc-title">Doc Item 3</h4>
+                    <span style="font-size: 13px; color: #777"
+                      >PDF, 0.8 MB</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="download-btn-sm"
+                  onclick="alert('Demo: Downloading List...')"
+                >
+                  Download <i class="ri-download-cloud-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ========================= [ Footer Section Start ] ========================= -->
       <div class="footer" id="footer">
-        <div class="container">
+        <div class="container" style="margin-top: 70px">
           <div class="footer-appointment-data zoom_in">
-            <div class="row align-items-center footer-top">
+            <div class="row align-items-center footer-top m">
               <div class="col-lg-6 col-md-12">
                 <div class="data-footer-left-appoint">
                   <p class="left-apooitn">Schedule Consultation</p>
@@ -604,9 +864,6 @@
                   >
                     <i class="ri-facebook-fill"></i>
                   </a>
-                  <!-- <a href="https://twitter.com/" class="social-data-footer">
-                    <i class="ri-twitter-x-fill"></i>
-                  </a> -->
                   <a
                     href="https://www.linkedin.com/company/vishwa-solarize/"
                     class="social-data-footer"
@@ -619,9 +876,6 @@
                   >
                     <i class="ri-instagram-line"></i>
                   </a>
-                  <!-- <a href="https://www.youtube.com/" class="social-data-footer">
-                    <i class="ri-youtube-fill"></i>
-                  </a> -->
                 </div>
               </div>
             </div>
@@ -642,18 +896,6 @@
                       <li class="footer-li">
                         <a href="service.html">Solar Decorative Lighting</a>
                       </li>
-                      <!-- <li class="footer-li">
-                        <a href="services-detail.html">Solar Energy</a>
-                      </li>
-                      <li class="footer-li">
-                        <a href="services-detail.html">Solar Panel</a>
-                      </li>
-                      <li class="footer-li">
-                        <a href="services-detail.html">Solar System</a>
-                      </li>
-                      <li class="footer-li">
-                        <a href="services-detail.html">Solar Guide</a>
-                      </li> -->
                     </ul>
                   </div>
                 </div>
@@ -673,27 +915,14 @@
                         <a href="about-us.html">About Us</a>
                       </li>
                       <li class="footer-li">
+                        <a href="contact.html">Contact Us</a>
+                      </li>
+                      <li class="footer-li">
                         <a href="gallery.html">Gallery</a>
                       </li>
                       <li class="footer-li">
                         <a href="scheme.html">Scheme</a>
                       </li>
-
-                      <!-- <li class="footer-li">
-                        <a href="projects-1.html">Projects</a>
-                      </li> -->
-                      <!-- <li class="footer-li">
-                        <a href="blogs-1.html">Blog</a>
-                      </li> -->
-                      <li class="footer-li">
-                        <a href="contact.html">Contact Us</a>
-                      </li>
-                      <!-- <li class="footer-li">
-                        <a href="faq.html">FAQs</a>
-                      </li> -->
-                      <!-- <li class="footer-li">
-                        <a href="pricing-plan.html">Pricing Plan</a>
-                      </li> -->
                     </ul>
                   </div>
                 </div>
@@ -739,8 +968,6 @@
               >, All Rights Reserved.
             </p>
             <div class="data-bottm-text">
-              <!-- <p>Privacy Policy</p>
-              <p>Terms & Conditions</p> -->
               <p>Designed & Created by <a href="#"> Sprintofy.com</a></p>
             </div>
           </div>
@@ -748,8 +975,6 @@
       </div>
       <!-- ========================= [ Footer Section Exit ] ========================= -->
     </div>
-    <div class="bottom-line-scotter"></div>
-    <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
 
     <!-- Floating Contact Icons -->
     <div class="floating-icons">
@@ -766,29 +991,20 @@
       </a>
     </div>
 
-    <!-- Scroll to Top Already Present -->
+    <div class="bottom-line-scotter"></div>
     <a href="#" id="scroll"><i class="ri-arrow-up-s-line"></i></a>
-    <!-- ====================== [ Jquery File ] ========================= -->
+
+    <!-- ====================== [ JS Files (Same as Home) ] ========================= -->
     <script src="assets/js/jquery.min.js"></script>
-    <!-- ====================== [ Bootstrap Link File ] ========================= -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- ====================== [ gsap.js File ] ========================= -->
     <script src="assets/js/gsap.min.js"></script>
-    <!-- ====================== [ jquery-ui.min File ] ========================= -->
     <script src="assets/js/jquery-ui.min.js"></script>
-    <!-- ====================== [ jquery-migrate File ] ========================= -->
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <!-- ====================== [ three.js File ] ========================= -->
     <script src="assets/js/three.min.js"></script>
-    <!-- ====================== [ hoverimage.js File ] ========================= -->
     <script src="assets/js/hoverEffect_ca7gnr.js"></script>
-    <!-- ====================== [ jquery.magnific.js File ] ========================= -->
     <script src="assets/js/jquery.magnific-popup.js"></script>
-    <!-- ====================== [ Observer File ] ========================= -->
     <script src="assets/js/Observer.min.js"></script>
-    <!-- ====================== [ Slick.js File ] ========================= -->
     <script src="assets/js/slick.min.js"></script>
-    <!-- ====================== [ Main File ] ========================= -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
