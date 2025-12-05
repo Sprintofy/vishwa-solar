@@ -474,6 +474,7 @@ body {
 }
 
 /* ----- [ menubar design ] ----- */
+
 .menu {
   width: 100%;
   height: 100%;
@@ -757,9 +758,11 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 20px;
+  gap: 0; /* CHANGED: Was 20px */
   max-width: 100%;
-  padding: 20px;
+  width: 100%;
+  padding: 0; /* CHANGED: Was 20px */
+  margin: 0;
 }
 
 .left-data {
@@ -6101,7 +6104,7 @@ li.slick-active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 0;
   padding: 100px 0;
   padding-top: 160px;
   position: relative;
