@@ -711,13 +711,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6 input-appoint">
                   <div class="data-max name-class">
-                    <input
-                      type="date"
-                      id="datepicker"
-                      autocomplete="off"
-                      class="mega-input"
-                      placeholder="Preferred Visit Date"
-                    />
+                   <input
+  type="text"
+  id="datepicker"
+  class="mega-input custom-date"
+  placeholder="Preferred Visit Date"
+  readonly
+/>
+
                     <div class="property-detail">
                       <img
                         src="assets/images/appointment/date.svg"
@@ -766,18 +767,18 @@
                   </div>
                 </div>
                 <div class="col-12 input-appoint-data">
-                  <div class="data-max">
-                    <textarea
-                      placeholder="Tell us about your energy needs or any specific requirements..."
-                      class="textarea-box"
-                    ></textarea>
-                    <div class="property-detail">
-                      <img
-                        src="assets/images/appointment/message.svg"
-                        alt="user"
-                      />
-                    </div>
-                  </div>
+                <div class="data-max textarea-wrapper">
+  <span class="fake-placeholder">
+    Tell us about your energy needs.....
+  </span>
+
+  <textarea class="textarea-box"></textarea>
+
+  <div class="property-detail">
+    <img src="assets/images/appointment/message.svg" alt="message" />
+  </div>
+</div>
+
                 </div>
                 <div class="butn-submit">
                   <button type="submit" class="button mt-0">
@@ -2207,5 +2208,70 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- ====================== [ Main File ] ========================= -->
     <script src="assets/js/script.js"></script>
+    <!-- date -->
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("datepicker");
+
+  if (!dateInput) return;
+
+  const picker = flatpickr(dateInput, {
+    disableMobile: true,
+    minDate: "today",
+    dateFormat: "d M Y",
+
+    onOpen: function () {
+      // 🔥 CLOSE calendar on scroll (mobile fix)
+      window.addEventListener("scroll", closeOnScroll, { passive: true });
+    },
+
+    onClose: function () {
+      document.removeEventListener("scroll", closeOnScroll);
+    }
+  });
+
+  function closeOnScroll() {
+    if (window.innerWidth <= 768) {
+      picker.close();
+    }
+  }
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("datepicker");
+  if (!dateInput) return;
+
+  const picker = flatpickr(dateInput, {
+    disableMobile: true,
+    minDate: "today",
+    dateFormat: "d M Y"
+  });
+
+  let pickerOpen = false;
+
+  dateInput.addEventListener("focus", () => {
+    pickerOpen = true;
+  });
+
+  dateInput.addEventListener("blur", () => {
+    pickerOpen = false;
+  });
+
+  // 🔥 MOBILE SCROLL INTENT DETECTION
+  window.addEventListener(
+    "touchstart",
+    () => {
+      if (window.innerWidth <= 768 && pickerOpen) {
+        picker.close();
+        pickerOpen = false;
+      }
+    },
+    { passive: true }
+  );
+});
+</script>
+
+
   </body>
 </html>

@@ -6390,3 +6390,65 @@ li.slick-active {
   transform: translateY(0%);
   transition-delay: 0.1s;
 }
+/* text area */
+/* Wrapper */
+.textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Textarea */
+.textarea-box {
+  width: 100%;
+  min-height: 120px;
+  padding: 16px 16px 16px 48px;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Fake placeholder */
+.fake-placeholder {
+  position: absolute;
+  top: 16px;
+  left: 48px;
+  color: #9aa0a6;
+  font-size: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 70px);
+}
+
+/* Hide fake placeholder when user types */
+.textarea-box:focus + .fake-placeholder,
+.textarea-box:not(:placeholder-shown) + .fake-placeholder {
+  display: none;
+}
+
+/* Mobile specific */
+@media (max-width: 767px) {
+  .textarea-box {
+    height: 52px;   /* input-like look */
+    min-height: 52px;
+  }
+}
+/* date */
+.flatpickr-calendar {
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  body {
+    overscroll-behavior: contain;
+  }
+}
+@media (max-width: 768px) {
+  .flatpickr-calendar {
+    z-index: 9999;
+  }
+}
