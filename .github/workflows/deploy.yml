@@ -19,7 +19,6 @@ jobs:
           port: 22
           script: |
             cd /var/www/vishwasolarise.com
-
             git stash                 
             git clean -fd                  
             git reset --hard
