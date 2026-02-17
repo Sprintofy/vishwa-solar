@@ -10,11 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@v0.1.9
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
@@ -22,7 +19,7 @@ jobs:
           port: 22
           script: |
             cd /var/www/vishwasolarise.com
-            
+
             git stash                 
             git clean -fd                  
             git reset --hard
